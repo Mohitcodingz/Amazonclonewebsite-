@@ -77,11 +77,11 @@ html {
 
 /* searchBar start*/
 .searchBar {
-    width: 958px;
+    width: 938px;
     height: 40px;
     background-color: azure;
     border-radius: 5px;
-    display:flex ;
+    display: flex;
     align-items: center;
 }
 
@@ -91,7 +91,6 @@ html {
     box-shadow: 0px 0px 5px rgb(0, 0, 0);
 }
 
-
 .selectBox {
     width: 52px;
     height: 40px;
@@ -99,8 +98,7 @@ html {
     border-bottom-left-radius: 5px;
     border: 1px transparent solid;
     background-color: #e6e6e6;
-    color: rgb(62, 62, 62);
-    text-align: center;
+    color: rgb(125, 125, 125);
 }
 
 .selectBox:hover {
@@ -110,32 +108,102 @@ html {
 }
 
 .inputBox {
-     height: 100%;
-     width: 855px;
-     
+    height: 100%;
+    width: 855px;
+    font-size: 18px;
+    padding-left: 10px;
+    border: none;
+    outline: none;
+}
+
+.inputBox:hover {
+    border: none;
+    outline: none;
+}
+
+.SearchIcon {
+    width: 45px;
+    height: 40px;
+    background-color: #a9176f;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.SearchIcon i {
+    font-size: 21px;
+
 }
 
 /* searchBar end*/
+/* start of language */
 .lang {
     width: 46px;
     height: 40px;
-    background-color: azure;
+    border: 1px transparent solid;
+    outline: none;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
 }
 
+.lang i {
+    font-size: 15px;
+    color: rgb(255, 108, 108);
+}
+
+.lang:hover {
+    border: 1px solid white;
+    outline: none;
+    cursor: pointer;
+}
+
+/* end of language */
+/* start of signIn */
 .signIn {
     width: 119px;
-    height: 40px;
-    background-color: azure;
-}
-
-.returnOrder {
-    width: 77px;
-    height: 40px;
-    background-color: azure;
-}
-
-.cart {
-    width: 84px;
     height: 45px;
-    background-color: azure;
+    border: 1px transparent solid;
+}
+
+.signIn:hover {
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+/* end of signIn */
+/* start of returnOrder */
+.returnOrder {
+    width: 87px;
+    height: 45px;
+    border: 1px transparent solid;
+   padding-left:10px ;
+}
+
+.returnOrder:hover {
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+/* End of returnOrder */
+/* Startofcart */
+.cart {
+    width: 94px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px transparent solid;
+}
+
+.cart:hover {
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.cart i {
+    color: white;
+    font-size: 30px;
 }
