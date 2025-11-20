@@ -1,209 +1,392 @@
-/* reset */
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: o;
-}
+    /* reset */
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: o;
+    }
 
-html {
-    color: white;
-}
+    html {
+        color: white;
+    }
 
-/* styling */
+    body {
+        background-color: rgb(255, 254, 254);
+    }
 
-.navbar {
-    height: 60px;
-    width: 100%;
-    background: linear-gradient(to right, #003e32, #04724b);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    gap: 10px;
-}
+    /* styling */
+    .navbar {
+        height: 60px;
+        width: 100%;
+        background: linear-gradient(to right, #003e32, #04724b);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        gap: 10px;
+    }
 
-.amazonLogoImage {
-    margin-left: 0;
-    width: 113px;
-    height: 50px;
-    background-image: url("amazonLogo.png");
-    background-repeat: no-repeat;
-    background-size: auto;
-    position: relative;
-    top: 1px;
-    left: -10px;
-    border: 1px solid transparent;
-    /*  this helps to hover without change in position*/
-}
+    .amazonLogoImage {
+        margin-left: 0;
+        width: 113px;
+        height: 50px;
+        background-image: url("amazonLogo.png");
+        background-repeat: no-repeat;
+        background-size: auto;
+        position: relative;
+        top: 1px;
+        left: -10px;
+        border: 1px solid transparent;
+        /*  this helps to hover without change in position*/
+    }
 
-.amazonLogoImage:hover {
-    border: 1px solid rgb(255, 255, 255);
-    cursor: pointer;
-}
+    .amazonLogoImage:hover {
+        border: 1px solid rgb(255, 255, 255);
+        cursor: pointer;
+    }
 
-/* location start */
-.location {
-    display: flex;
-    align-items: center;
-    width: 86px;
-    height: 50px;
-    border: 1px transparent solid;
-}
+    /* location start */
+    .location {
+        display: flex;
+        align-items: center;
+        width: 86px;
+        height: 50px;
+        border: 1px transparent solid;
+    }
 
-.location:hover {
-    cursor: pointer;
-    border: 1px solid white
-}
+    .location:hover {
+        cursor: pointer;
+        border: 1px solid white
+    }
 
-.location i {
-    position: relative;
-    top: 4px;
-    left: 5px
-}
+    .location i {
+        position: relative;
+        top: 4px;
+        left: 5px
+    }
 
-.locationText {
-    position: relative;
-    left: 10px;
-}
+    .locationText {
+        position: relative;
+        left: 10px;
+    }
 
-.deliverTo {
-    font-size: 13px;
-    color: rgb(233, 233, 233);
-}
+    .deliverTo {
+        font-size: 13px;
+        color: rgb(233, 233, 233);
+    }
 
-/* location end */
+    /* location end */
 
 
-/* searchBar start*/
-.searchBar {
-    width: 938px;
-    height: 40px;
-    background-color: azure;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-}
+    /* searchBar start*/
+    .searchBar {
+        width: 938px;
+        height: 40px;
+        background-color: azure;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+    }
 
-.searchBar:hover {
-    cursor: pointer;
-    border: 1px transparent white;
-    box-shadow: 0px 0px 5px rgb(0, 0, 0);
-}
+    .searchBar:hover {
+        cursor: pointer;
+        border: 1px transparent white;
+        box-shadow: 0px 0px 5px rgb(0, 0, 0);
+    }
 
-.selectBox {
-    width: 52px;
-    height: 40px;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-    border: 1px transparent solid;
-    background-color: #e6e6e6;
-    color: rgb(125, 125, 125);
-}
+    .selectBox {
+        width: 52px;
+        height: 40px;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        border: 1px transparent solid;
+        background-color: #e6e6e6;
+        color: rgb(125, 125, 125);
+    }
 
-.selectBox:hover {
-    cursor: pointer;
-    border: 1px transparent white;
-    color: rgb(0, 0, 0);
-}
+    .selectBox:hover {
+        cursor: pointer;
+        border: 1px transparent white;
+        color: rgb(0, 0, 0);
+    }
 
-.inputBox {
-    height: 100%;
-    width: 855px;
-    font-size: 18px;
-    padding-left: 10px;
-    border: none;
-    outline: none;
-}
+    .inputBox {
+        height: 100%;
+        width: 855px;
+        font-size: 18px;
+        padding-left: 10px;
+        border: none;
+        outline: none;
+    }
 
-.inputBox:hover {
-    border: none;
-    outline: none;
-}
+    .inputBox:hover {
+        border: none;
+        outline: none;
+    }
 
-.SearchIcon {
-    width: 45px;
-    height: 40px;
-    background-color: #a9176f;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+    .SearchIcon {
+        width: 45px;
+        height: 40px;
+        background-color: #a9176f;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
-.SearchIcon i {
-    font-size: 21px;
+    .SearchIcon i {
+        font-size: 21px;
 
-}
+    }
 
-/* searchBar end*/
-/* start of language */
-.lang {
-    width: 46px;
-    height: 40px;
-    border: 1px transparent solid;
-    outline: none;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-}
+    /* searchBar end*/
+    /* start of language */
+    .lang {
+        width: 46px;
+        height: 40px;
+        border: 1px transparent solid;
+        outline: none;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+    }
 
-.lang i {
-    font-size: 15px;
-    color: rgb(255, 108, 108);
-}
+    .lang i {
+        font-size: 15px;
+        color: rgb(255, 108, 108);
+    }
 
-.lang:hover {
-    border: 1px solid white;
-    outline: none;
-    cursor: pointer;
-}
+    .lang:hover {
+        border: 1px solid white;
+        outline: none;
+        cursor: pointer;
+    }
 
-/* end of language */
-/* start of signIn */
-.signIn {
-    width: 119px;
-    height: 45px;
-    border: 1px transparent solid;
-}
+    /* end of language */
+    /* start of signIn */
+    .signIn {
+        width: 119px;
+        height: 45px;
+        border: 1px transparent solid;
+    }
 
-.signIn:hover {
-    border: 1px solid white;
-    cursor: pointer;
-}
+    .signIn:hover {
+        border: 1px solid white;
+        cursor: pointer;
+    }
 
-/* end of signIn */
-/* start of returnOrder */
-.returnOrder {
-    width: 87px;
-    height: 45px;
-    border: 1px transparent solid;
-   padding-left:10px ;
-}
+    /* end of signIn */
+    /* start of returnOrder */
+    .returnOrder {
+        width: 87px;
+        height: 45px;
+        border: 1px transparent solid;
+        padding-left: 10px;
+    }
 
-.returnOrder:hover {
-    border: 1px solid white;
-    cursor: pointer;
-}
+    .returnOrder:hover {
+        border: 1px solid white;
+        cursor: pointer;
+    }
 
-/* End of returnOrder */
-/* Startofcart */
-.cart {
-    width: 94px;
-    height: 45px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px transparent solid;
-}
+    /* End of returnOrder */
+    /* Startofcart */
+    .cart {
+        width: 94px;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px transparent solid;
+    }
 
-.cart:hover {
-    border: 1px solid white;
-    cursor: pointer;
-}
+    .cart:hover {
+        border: 1px solid white;
+        cursor: pointer;
+    }
 
-.cart i {
-    color: white;
-    font-size: 30px;
-}
+    .cart i {
+        color: white;
+        font-size: 30px;
+    }
+
+    /* navbar2 -------------------------------------------------- */
+    .navbar2 {
+        height: 39px;
+        width: 100%;
+        background-color: #085749;
+        display: flex;
+        align-items: center;
+        position: relative;
+        z-index: 1;
+    }
+
+    .allOption {
+        position: relative;
+        left: 10px;
+        margin-right: 40px;
+        border: 1px transparent solid;
+        height: 39px;
+        display: flex;
+        align-items: center;
+    }
+
+    .allOption:hover {
+        border: 1px solid white;
+        cursor: pointer;
+    }
+
+    .anchorParent1 {
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .anchorChild {
+        height: 39px;
+        color: white;
+        text-decoration: none;
+        border: 1px transparent solid;
+        display: flex;
+        align-items: center;
+    }
+
+    .anchorChild:hover {
+        border: 1px solid white;
+    }
+
+    /* end of the navbar2 */
+
+    /* start of the slideshow */
+    .slides {
+        width: 1800px;
+        height: 700px;
+        background-color: gray;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 0;
+    }
+
+    /* end of the slideshow */
+    /* --- SLIDER CONTAINER --- */
+    .slider {
+        position: relative;
+        width: 100%;
+        max-width: 1500px;
+        height: 500px;
+        margin: auto;
+        overflow: hidden;
+    }
+
+    /* Hide radio buttons */
+    .slider input {
+        display: none;
+    }
+
+    /* --- SLIDES WRAPPER --- */
+    .slides {
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+
+    /* --- EACH SLIDE --- */
+    .slide {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transition: opacity 0.5s ease;
+    }
+
+    .slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: auto;
+    }
+
+    .slide::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 30%;
+        /* how tall the fade is */
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(252, 252, 252, 0.7) 100%);
+        pointer-events: none;
+        /* don't block clicks */
+    }
+
+    /* --- SHOW SLIDE WHEN CHECKED --- */
+    #s1:checked~.slides #slide1 {
+        opacity: 1;
+    }
+
+    #s2:checked~.slides #slide2 {
+        opacity: 1;
+    }
+
+    #s3:checked~.slides #slide3 {
+        opacity: 1;
+    }
+
+    /* --- ARROWS --- */
+    .arrows label {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        padding: 12px 18px;
+        font-size: 40px;
+        background: rgba(0, 0, 0, 0.3);
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        z-index: 20;
+    }
+
+    /* Show arrows when hovering slider */
+    .slider:hover .arrows label {
+        opacity: 1;
+    }
+
+    /* Default positions */
+    .prev {
+        left: 20px;
+    }
+
+    .next {
+        right: 20px;
+    }
+
+    /* Hide all arrows initially */
+    .arrows label {
+        display: none;
+    }
+
+    /* --- SHOW CORRECT ARROWS FOR EACH SLIDE --- */
+
+    /* Slide 1 arrows */
+    #s1:checked~.arrows .s1prev,
+    #s1:checked~.arrows .s1next {
+        display: block;
+    }
+
+    /* Slide 2 arrows */
+    #s2:checked~.arrows .s2prev,
+    #s2:checked~.arrows .s2next {
+        display: block;
+    }
+
+    /* Slide 3 arrows  */
+    #s3:checked~.arrows .s3prev,
+    #s3:checked~.arrows .s3next {
+        display: block;
+    }
